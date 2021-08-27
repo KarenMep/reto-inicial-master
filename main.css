@@ -1,0 +1,226 @@
+body {
+  background-image: linear-gradient(
+40deg,
+#00fffc 0%,
+#fc00ff 45%,
+#fffc00 100%
+);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-rows: 0.2fr 0.5fr 0.7fr 0.5fr 0.5fr ;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "ques linea laptop"
+    "frase1 linea donde"
+    "servicios linea frase3"
+    "servicios linea frase3"
+    ;
+}
+
+/* --------TITULO--------- */
+.titulo {
+  grid-area: titulo;
+  background: rgb(230, 230, 230);
+  margin: 10px;
+  
+}
+
+.titulo, .h1{
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+/* -----------LINEA-------------- */
+.linea {
+  grid-area: linea;
+  background: black;
+
+  border-radius: 10px;
+}
+
+/* --------¿QUE ES?-------- */
+.ques {
+  grid-area: ques;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: solid 1px rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  margin: 60px;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face1 {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+.carta {
+  color: #000000;
+  font-family: "Dosis", sans-serif;
+}
+
+.face2 {
+  transition: 0.5s;
+}
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+.card:hover .face.face2 {
+height: 50px;
+}
+
+h2 {
+font-size: 2em;
+}
+
+.card:nth-child(1) .face.face2 {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); 
+border-radius: 5px;
+}
+
+.card:nth-child(2) .face.face2 {
+background-image: linear-gradient(
+40deg,
+#fc00ff 0%,
+#00fffc 45%,
+#fffc00 100%
+);
+border-radius: 5px;
+}
+
+.card:nth-child(3) .face.face2 {
+background-image: linear-gradient(
+40deg,
+#00fffc 0%,
+#fc00ff 45%,
+#fffc00 100%
+);
+border-radius: 5px;
+}
+
+/* LAPTOP */
+.laptop{
+  grid-area: laptop;
+  margin: 60px;
+}
+
+/* ¿DONDE SE APLICA */
+.donde {
+  grid-area: donde;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: solid 1px rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  margin: 20px;
+}
+
+/* FRASE 1 */
+
+.frase1 {
+  grid-area: frase1;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: solid 1px rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.frase1, .i{
+font-size: 2rem;
+text-align: center;
+  font-family: "Dosis", sans-serif;
+
+}
+
+/* FRASE 3 */
+
+.frase3 {
+  grid-area: frase3;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: solid 1px rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.frase3, .i{
+font-size: 2rem;
+text-align: center;
+  font-family: "Dosis", sans-serif;
+
+}
+
+
+
+/* SERVICIOS */
+.servicios {
+  grid-area: servicios;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: solid 1px rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
+  margin: 60px;
+}
